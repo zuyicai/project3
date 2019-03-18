@@ -1,0 +1,14 @@
+<ul>
+  New movie: {{new_movie}} by director with the id of {{new_director}}. Distributed by director with the id of {{new_distributor}}.<br>
+    The Rotten_Tomatoes rating is saved in rating id of {{new_rating}}.
+    <br>Please check out the URL for ALL movies to see the whole list.}}
+
+</ul>
+
+<!--
+{% if not new_movie %}
+There are no saved favorite movies to show.
+{% endif %} -->
+
+
+<a href="{{ url_for('index')}}">Return to home page</a>
