@@ -66,7 +66,7 @@ http://127.0.0.1:5000/all_movies
 http://127.0.0.1:5000/all_directors
 * This route shows the list of all directors and the number of movies they directed.
 * you will see the following image.
-* ![Alt text](https://github.com/zuyicai/image/blob/master/project3/alldir.pngg)
+* ![Alt text](https://github.com/zuyicai/image/blob/master/project3/alldir.png)
 
 
 * Then:
