@@ -4,7 +4,7 @@ This's a whole web application — a very simple one, using the web framework ca
 
 SI507_project3.py is the file that I create the class and define the functional structure of this system, plus the routes; templates is the file that I create the htmls for different appearance of URLs. Here I referred to the diagram of the database that I created for project2. In this database, "Rating" to "movie" is one to one, "Director" to "movie" is many to one, "Distributor" to "movie" is many to one, "Distributor" to "Director" is many to many(Here I just show the relationship).
 
-* ![Alt text](https://github.com/zuyicai/image/blob/master/project3/SI507_movies_database_plan.key)
+* ![Alt text](https://github.com/zuyicai/image/blob/master/project3/plan.png)
 
 
 Actually, I improve the app by adding serval routes such as all_distributors, all_directors and ratings, and this app has routes to add details to director and distributor. Thus readers can get the whole picture of the movie with the director, the distributor and different ratings.
