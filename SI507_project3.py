@@ -35,8 +35,8 @@ class Distributor(db.Model):
     # movie_id = db.Column(db.Integer, db.ForeignKey("movie.id"))
     location = db.Column(db.String(64))
     movies = db.relationship("movie",backref="Distributor") # Distributor-movie:one to many
-    directors = db.relationship('Director', secondary=collections, lazy='subquery', backref=db.backref('Distributor', lazy=True))
-
+    directors = db.relationship('Director', secondary=collections, lazy='dynamic', backref=db.backref('Distributor', lazy='dynamic'))
+    # directors = db.relationship('Director', secondary=collections, lazy='subquery', backref=db.backref('Distributor', lazy=True))
 
     def __repr__(self):
         return "{} (Location: {})".format(self.name,self.location)
@@ -50,6 +50,7 @@ class Director(db.Model):
     Nationality = db.Column(db.String(64))
     Party = db.Column(db.String(64))
     movies = db.relationship("movie",backref="Director") # Director-movie:one to many
+    # distributors = db.relationship('Distributor', secondary=collections, lazy='dynamic', backref=db.backref('Director', lazy='dynamic'))
 
     def __repr__(self):
         return "{}'s personal information: Birth: {}, Nationality:{}, Party:{}.".format(self.name,self.Birth, self.Nationality,self.Party)
